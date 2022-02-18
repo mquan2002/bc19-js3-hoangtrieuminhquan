@@ -9,22 +9,76 @@
 </head>
 <body> 
    <div class="container">
-       <h2>Bài tập : Quản lý tuyển sinh</h2>
+       <h2>Bài tập 1 : Quản lý tuyển sinh</h2>
         <p>Nhập vào điểm chuẩn của hội đồng :</p>
-        <input class="form-control w-50" id="day">
+        <input class="form-control w-50" id="standard">
         <p>Nhập vào điểm thi 3 môn (Văn-Toán-Anh):</p>
         <div class="input-group">
             <input class="form-control" id="num1">
             <input class="form-control" id="num2">
             <input class="form-control" id="num3">
         </div>
+        <div class="wrap-contact100">
         <p>Nhập vào khu vực :</p>
-        <input class="form-control w-50" id="area">
-        <p>Đối tượng dự thi :</p>
-        <input class="form-control w-50" id="type">
+        <ul>
+            <li class="type">
+              <input type="checkbox" name="selector" id="areaA" />
+              <label for="areaA">Khu vực A</label>
+              <div class="check"></div>
+            </li>
 
-        <button class ="btn btn-primary" id="result">Kết quả</button>
-        <p id="bai1"></p>
+            <li class="type">
+              <input type="checkbox" name="selector" id="areaB" />
+              <label for="areaB">Khu vực B</label>
+              <div class="check"></div>
+            </li>
+
+            <li class="type">
+              <input type="checkbox" name="selector" id="areaC" />
+              <label for="areaC">Khu vực C</label>
+              <div class="check"></div>
+            </li>
+
+            <li class="type">
+                <input type="checkbox" name="selector" id="areaD" />
+                <label for="areaD">X</label>
+                <div class="check"></div>
+            </li>
+          </ul>
+        </div>
+        <p>Đối tượng dự thi :</p>
+        <ul>
+            <li class="type">
+              <input type="checkbox" name="selector" id="type1" />
+              <label for="type1">Đối tượng loại 1</label>
+              <div class="check"></div>
+            </li>
+
+            <li class="type">
+              <input type="checkbox" name="selector" id="type2" />
+              <label for="type2">Đối tượng loại 2</label>
+              <div class="check"></div>
+            </li>
+
+            <li class="type">
+              <input type="checkbox" name="selector" id="type3" />
+              <label for="type3">Đối tượng loại 3</label>
+              <div class="check"></div>
+            </li>
+            <li class="type">
+                <input type="checkbox" name="selector" id="type4" />
+                <label for="type4">X</label>
+                <div class="check"></div>
+            </li>
+          </ul>
+          <button class ="btn btn-primary" id="result">Kết quả</button>
+        </div>
+        <div style="clear: both"></div>
+   </div>
+   <br>
+   <br>
+   <div class="container">
+       
    </div>
 
 
