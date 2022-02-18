@@ -75,3 +75,28 @@ function checkPrioritySubject(type1, type2, type3, type4){
         return 0;
     }
 }
+// Bài 2
+const BillEl = document.getElementById("btnBill").onclick = function () {
+    const electricityEl = document.getElementById ("electricity").value;
+    const price50 = 500
+    const price100 = 650
+    const price200 = 850
+    const price350 = 1100
+    const priceAfter = 1300
+    if (electricityEl <= 50) {
+      const bill = price50 * electricityEl;
+      document.getElementById("giaTien").innerHTML = ` Số tiền điện phải đóng là: ${bill} VNĐ`
+    } else if (electricityEl<= 100) {
+      const bill = price100 * electricityEl;
+      document.getElementById("giaTien").innerHTML = ` Số tiền điện phải đóng là: ${bill} VNĐ`
+    } else if (electricityEl<= 200) {
+      const bill = price200 * electricityEl;
+      document.getElementById("giaTien").innerHTML = ` Số tiền điện phải đóng là: ${bill} VNĐ`
+    } else if (electricityEl<= 350) {
+      const bill = price350 * electricityEl;
+      document.getElementById("giaTien").innerHTML = ` Số tiền điện phải đóng là: ${bill} VNĐ`
+    } else if (electricityEl >350) {
+      const bill = priceAfter * electricityEl;
+      document.getElementById("giaTien").innerHTML = ` Số tiền điện phải đóng là: ${bill} VNĐ`
+    }
+  }
